@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cybersecurity Reflection Blog by Brian Justine D. Alcoran — A personal learning journal for Information Security.">
+  <meta name="author" content="Brian Justine D. Alcoran">
+  <title>Cybersecurity Reflection Blog | Brian Justine D. Alcoran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Reading Progress -->
+  <div class="progress-bar" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="nav-brand">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 2L4 8v8c0 7.2 5.1 13.9 12 15 6.9-1.1 12-7.8 12-15V8L16 2z" stroke="#22d3ee" stroke-width="1.5" fill="rgba(34,211,238,0.08)"/>
+        <path d="M12 16l3 3 6-6" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      InfoSec Journal
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="reflection-1.html">Reflection 1</a></li>
+      <li><a href="reflection-2.html">Reflection 2</a></li>
+      <li><a href="#references">References</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark/light mode">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content reveal">
+        <span class="hero-badge">BSIT · Information Security</span>
+        <h1 id="hero-title" class="hero-title">Cybersecurity Reflection Blog</h1>
+        <blockquote class="hero-subtitle">
+          A personal learning journal documenting my understanding and insights about Information Security throughout the semester.
+        </blockquote>
+
+        <dl class="hero-meta">
+          <dt>Name</dt>
+          <dd>Brian Justine D. Alcoran</dd>
+          <dt>Course</dt>
+          <dd>Bachelor of Science in Information Technology (BSIT)</dd>
+        </dl>
+
+        <div class="hero-actions">
+          <a href="reflection-1.html" class="btn btn-primary">
+            Read Reflection
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+          <a href="#timeline" class="btn btn-ghost">View Timeline</a>
+        </div>
+      </div>
+
+      <!-- Original McCumber Cube-inspired SVG illustration -->
+      <div class="hero-visual reveal" aria-hidden="true">
+        <svg viewBox="0 0 420 420" width="380" height="380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="faceTop" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.1"/>
+            </linearGradient>
+            <linearGradient id="faceLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.05"/>
+            </linearGradient>
+            <linearGradient id="faceRight" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.2"/>
+              <stop offset="100%" stop-color="#0891b2" stop-opacity="0.08"/>
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Orbiting ring -->
+          <ellipse cx="210" cy="210" rx="170" ry="60" fill="none" stroke="#22d3ee" stroke-opacity="0.12" stroke-width="1" transform="rotate(-20 210 210)">
+            <animateTransform attributeName="transform" type="rotate" from="-20 210 210" to="340 210 210" dur="30s" repeatCount="indefinite"/>
+          </ellipse>
+
+          <!-- Isometric 3x3x3 cube grid -->
+          <!-- Back layer -->
+          <g opacity="0.4">
+            <polygon points="130,160 190,125 250,160 190,195" fill="url(#faceTop)" stroke="#22d3ee" stroke-width="0.8" stroke-opacity="0.3"/>
+            <polygon points="130,160 190,195 190,255 130,220" fill="url(#faceLeft)" stroke="#22d3ee" stroke-width="0.8" stroke-opacity="0.3"/>
+            <polygon points="190,195 250,160 250,220 190,255" fill="url(#faceRight)" stroke="#14b8a6" stroke-width="0.8" stroke-opacity="0.3"/>
+          </g>
+
+          <!-- Middle layer -->
+          <g opacity="0.65">
+            <polygon points="150,180 210,145 270,180 210,215" fill="url(#faceTop)" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.5"/>
+            <polygon points="150,180 210,215 210,275 150,240" fill="url(#faceLeft)" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.5"/>
+            <polygon points="210,215 270,180 270,240 210,275" fill="url(#faceRight)" stroke="#14b8a6" stroke-width="1" stroke-opacity="0.5"/>
+          </g>
+
+          <!-- Front layer (highlighted) -->
+          <g filter="url(#glow)">
+            <polygon points="170,200 230,165 290,200 230,235" fill="url(#faceTop)" stroke="#22d3ee" stroke-width="1.5"/>
+            <polygon points="170,200 230,235 230,295 170,260" fill="url(#faceLeft)" stroke="#22d3ee" stroke-width="1.5"/>
+            <polygon points="230,235 290,200 290,260 230,295" fill="url(#faceRight)" stroke="#14b8a6" stroke-width="1.5"/>
+          </g>
+
+          <!-- Internal grid lines on front face -->
+          <line x1="200" y1="182.5" x2="200" y2="217.5" stroke="#22d3ee" stroke-width="0.6" stroke-opacity="0.5"/>
+          <line x1="260" y1="182.5" x2="260" y2="217.5" stroke="#22d3ee" stroke-width="0.6" stroke-opacity="0.5"/>
+          <line x1="185" y1="191.25" x2="275" y2="191.25" stroke="#22d3ee" stroke-width="0.6" stroke-opacity="0.5"/>
+          <line x1="185" y1="208.75" x2="275" y2="208.75" stroke="#22d3ee" stroke-width="0.6" stroke-opacity="0.5"/>
+
+          <!-- Axis labels -->
+          <text x="60" y="280" fill="#22d3ee" font-family="JetBrains Mono, monospace" font-size="9" opacity="0.7">SAFEGUARDS</text>
+          <text x="300" y="130" fill="#14b8a6" font-family="JetBrains Mono, monospace" font-size="9" opacity="0.7">SERVICES</text>
+          <text x="310" y="310" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="9" opacity="0.7">STATES</text>
+
+          <!-- Corner nodes -->
+          <circle cx="170" cy="200" r="4" fill="#22d3ee"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+          <circle cx="290" cy="200" r="4" fill="#14b8a6"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+          <circle cx="230" cy="295" r="4" fill="#22d3ee"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/></circle>
+
+          <!-- Shield icon center -->
+          <g transform="translate(215, 218)">
+            <path d="M0,-18 L15,-10 V5 C15,14 7.5,20 0,22 C-7.5,20 -15,14 -15,5 V-10 Z" fill="rgba(34,211,238,0.15)" stroke="#22d3ee" stroke-width="1.2"/>
+            <path d="M-5,2 L-1,6 L7,-4" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round"/>
+          </g>
+
+          <!-- Floating data particles -->
+          <circle cx="80" cy="120" r="2" fill="#22d3ee" opacity="0.5"><animate attributeName="cy" values="120;110;120" dur="3s" repeatCount="indefinite"/></circle>
+          <circle cx="340" cy="280" r="2.5" fill="#14b8a6" opacity="0.4"><animate attributeName="cy" values="280;270;280" dur="4s" repeatCount="indefinite"/></circle>
+          <circle cx="100" cy="340" r="1.5" fill="#22d3ee" opacity="0.6"><animate attributeName="cx" values="100;108;100" dur="5s" repeatCount="indefinite"/></circle>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Reflection Timeline -->
+    <section id="timeline" class="section" aria-labelledby="timeline-title">
+      <div class="section-header reveal">
+        <span class="section-tag">Semester Progress</span>
+        <h2 id="timeline-title" class="section-title">Reflection Timeline</h2>
+        <p class="section-subtitle">Each entry captures a week of learning — click an unlocked reflection to read the full journal entry.</p>
+      </div>
+
+      <div class="timeline reveal">
+        <!-- Reflection 1 — Unlocked -->
+        <article class="timeline-item unlocked">
+          <div class="timeline-node" aria-hidden="true">
+            <svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-number">Reflection 01</span>
+            <h3 class="timeline-title">McCumber Cube, Foundations of Security, and Security Principles</h3>
+            <p class="timeline-desc">Understanding the three dimensions of information security — states, services, and safeguards — and how they connect to build a complete security framework.</p>
+            <span class="timeline-status status-available">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+              Available Now
+            </span>
+            <div style="margin-top: 1rem;">
+              <a href="reflection-1.html" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Read Entry →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reflection 2 — Unlocked -->
+        <article class="timeline-item unlocked">
+          <div class="timeline-node" aria-hidden="true">
+            <svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-number">Reflection 02</span>
+            <h3 class="timeline-title">Security Threat Landscape and Social Engineering</h3>
+            <p class="timeline-desc">Exploring social engineering tactics, the human side of cybersecurity, and how awareness helps protect information from manipulation.</p>
+            <span class="timeline-status status-available">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+              Available Now
+            </span>
+            <div style="margin-top: 1rem;">
+              <a href="reflection-2.html" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Read Entry →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reflection 3 — Locked -->
+        <article class="timeline-item locked">
+          <div class="timeline-node" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="6" height="5" rx="1"/><path d="M4.5 5V3.5a1.5 1.5 0 0 1 3 0V5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-number">Reflection 03</span>
+            <h3 class="timeline-title">Upcoming Topic</h3>
+            <p class="timeline-desc">This reflection will be published after the next class discussion.</p>
+            <span class="timeline-status status-soon">Coming Soon</span>
+          </div>
+        </article>
+
+        <!-- Reflection 4 — Locked -->
+        <article class="timeline-item locked">
+          <div class="timeline-node" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="6" height="5" rx="1"/><path d="M4.5 5V3.5a1.5 1.5 0 0 1 3 0V5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-number">Reflection 04</span>
+            <h3 class="timeline-title">Upcoming Topic</h3>
+            <p class="timeline-desc">This reflection will be published after the next class discussion.</p>
+            <span class="timeline-status status-soon">Coming Soon</span>
+          </div>
+        </article>
+
+        <!-- Reflection 5 — Locked -->
+        <article class="timeline-item locked">
+          <div class="timeline-node" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="6" height="5" rx="1"/><path d="M4.5 5V3.5a1.5 1.5 0 0 1 3 0V5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-number">Reflection 05</span>
+            <h3 class="timeline-title">Upcoming Topic</h3>
+            <p class="timeline-desc">This reflection will be published after the next class discussion.</p>
+            <span class="timeline-status status-soon">Coming Soon</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="section" aria-labelledby="references-title">
+      <div class="section-header reveal">
+        <span class="section-tag">Sources</span>
+        <h2 id="references-title" class="section-title">References</h2>
+        <p class="section-subtitle">Academic sources and materials used throughout this course (APA format).</p>
+      </div>
+
+      <div class="glass-card reveal">
+        <ol class="reference-list">
+          <li>
+            McCumber, J. R. (1991). Information systems security: A comprehensive model. In <em>Proceedings of the 14th National Computer Security Conference</em> (Vol. 2, pp. 328–337). National Institute of Standards and Technology.
+            <a href="https://csrc.nist.gov/pubs/conference/1991/10/01/proceedings-14th-national-computer-security-confer/final" target="_blank" rel="noopener noreferrer">https://csrc.nist.gov/pubs/conference/1991/10/01/proceedings-14th-national-computer-security-confer/final</a>
+            <span class="reference-source">Used for understanding the McCumber Cube framework and its three dimensions.</span>
+          </li>
+          <li>
+            National Institute of Standards and Technology. (2017). <em>An introduction to information security</em> (NIST Special Publication 800-12, Rev. 1). U.S. Department of Commerce.
+            <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf" target="_blank" rel="noopener noreferrer">https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf</a>
+            <span class="reference-source">Primary source for confidentiality, integrity, availability, and security foundations.</span>
+          </li>
+          <li>
+            National Institute of Standards and Technology. (2004). <em>Standards for security categorization of federal information and information systems</em> (FIPS Publication 199). U.S. Department of Commerce.
+            <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf" target="_blank" rel="noopener noreferrer">https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf</a>
+            <span class="reference-source">Referenced for official definitions of the CIA triad security objectives.</span>
+          </li>
+          <li>
+            National Institute of Standards and Technology. (n.d.). Confidentiality, integrity, availability. <em>Computer Security Resource Center Glossary</em>.
+            <a href="https://csrc.nist.gov/glossary/term/confidentiality_integrity_availability" target="_blank" rel="noopener noreferrer">https://csrc.nist.gov/glossary/term/confidentiality_integrity_availability</a>
+            <span class="reference-source">Quick reference for CIA triad terminology while writing Reflection 1.</span>
+          </li>
+          <li>
+            Cybersecurity and Infrastructure Security Agency. (n.d.). <em>Cybersecurity best practices</em>. U.S. Department of Homeland Security.
+            <a href="https://www.cisa.gov/topics/cybersecurity-best-practices" target="_blank" rel="noopener noreferrer">https://www.cisa.gov/topics/cybersecurity-best-practices</a>
+            <span class="reference-source">Used to connect classroom concepts to real-world security practices and user behavior.</span>
+          </li>
+          <li>
+            National Institute of Standards and Technology. (2020). <em>Zero trust architecture</em> (NIST Special Publication 800-207). U.S. Department of Commerce.
+            <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf" target="_blank" rel="noopener noreferrer">https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf</a>
+            <span class="reference-source">Background reading for topics I want to explore further this semester.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Brian Justine D. Alcoran · BSIT · Information Security Reflection Blog</p>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
